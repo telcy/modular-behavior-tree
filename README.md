@@ -370,4 +370,5 @@ class Inverter extends Decorator {
 
 ## Version history
 
+- 1.0.1 - new bundle
 - 1.0.0 - initial release
