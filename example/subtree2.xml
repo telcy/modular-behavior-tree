@@ -1,0 +1,6 @@
+<BehaviorTree>
+    <MemSequence>
+        <Wait ms="5000" />
+        <LogMessage text="Waited 5 seconds" />
+    </MemSequence>
+</BehaviorTree>

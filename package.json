@@ -1,0 +1,28 @@
+{
+  "name": "modular-behavior-tree",
+  "version": "1.0.0",
+  "description": "JavaScript implementation of a modular behavior tree",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "babel-node --presets es2015 example/index.js",
+    "build": "babel src --presets babel-preset-es2015 --out-dir lib --no-comments"
+  },
+  "keywords": [
+    "modular",
+    "behavior",
+    "tree",
+    "behaviour"
+  ],
+  "author": {
+    "name": "Jascha Burmeister",
+    "url": "http://www.jaschaburmeister.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "xml-parser": "^1.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

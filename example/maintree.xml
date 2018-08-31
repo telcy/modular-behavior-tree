@@ -1,0 +1,6 @@
+<BehaviorTree>
+    <MemSequence>
+        <Subtree1 />
+        <Subtree2 />
+    </MemSequence>
+</BehaviorTree>
