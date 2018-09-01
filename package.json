@@ -1,6 +1,6 @@
 {
   "name": "modular-behavior-tree",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript implementation of a modular behavior tree",
   "main": "./lib/index.js",
   "scripts": {
@@ -13,6 +13,14 @@
     "tree",
     "behaviour"
   ],
+  "bugs": {
+    "url": "https://github.com/telcy/modular-behavior-tree/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telcy/modular-behavior-tree.git"
+  },
+  "homepage": "https://github.com/telcy/modular-behavior-tree",
   "author": {
     "name": "Jascha Burmeister",
     "url": "http://www.jaschaburmeister.com"

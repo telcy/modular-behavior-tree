@@ -111,7 +111,7 @@ let tree = new Sequence({
 
 ## Register custom nodes and trees
 
-To make the tree loader aware of subtrees or custom nodes you have to pass them as second argument into the loader function.
+To make the tree loader aware of subtrees or custom nodes you have to pass them as second argument into the parse function.
 
 ```js
 // custom node
@@ -370,5 +370,6 @@ class Inverter extends Decorator {
 
 ## Version history
 
+- 1.0.2 - add links, update readme
 - 1.0.1 - new bundle
 - 1.0.0 - initial release
