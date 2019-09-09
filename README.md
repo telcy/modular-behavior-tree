@@ -152,7 +152,7 @@ Composite nodes with children. Mem* does remember the last executed child which 
 ``` xml
 <Inverter>
    <MyCustomAction />
-</MaxTime>
+</Inverter>
 ```
 
 ### MaxTime
