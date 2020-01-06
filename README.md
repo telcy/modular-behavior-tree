@@ -370,6 +370,8 @@ class Inverter extends Decorator {
 
 ## Version history
 
+- 1.0.4 - async/await support
+- 1.0.3 - updated dependencies
 - 1.0.2 - add links, update readme
 - 1.0.1 - new bundle
 - 1.0.0 - initial release

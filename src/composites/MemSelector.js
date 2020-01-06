@@ -10,11 +10,11 @@ class MemSelector extends Composite {
         this._openNodeIndex = null
     }
 
-    run(blackboard, tick) {
+    async run(blackboard, tick) {
 
         for (let i=0; i<this.children.length; i++) {
             if(!this._openNodeIndex || (this._openNodeIndex && this._openNodeIndex === i) ) {
-                let status = this.children[i]._execute(blackboard, tick);
+                let status = await this.children[i]._execute(blackboard, tick);
                 this._openNodeIndex = (status === RUNNING) ? i : null
                 if (status !== FAILURE) return status;
             }

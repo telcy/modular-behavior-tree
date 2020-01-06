@@ -9,10 +9,10 @@ class Selector extends Composite {
         })
     }
 
-    run(blackboard, tick) {
+    async run(blackboard, tick) {
 
         for (let i=0; i<this.children.length; i++) {
-            let status = this.children[i]._execute(blackboard, tick);
+            let status = await this.children[i]._execute(blackboard, tick);
             if (status !== FAILURE) return status;
         }
 

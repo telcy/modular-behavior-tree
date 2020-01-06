@@ -107,11 +107,11 @@ export default class BehaviorTree {
 
     }
 
-    tick() {
+    async tick() {
 
         this._tick = new Tick()
         this._tick.setOpenNodes(this._lastOpenNodes)
-        this._lastResult = this._tree._execute(this._blackboard, this._tick)
+        this._lastResult = await this._tree._execute(this._blackboard, this._tick)
         this._lastOpenNodes = this._tick.getOpenNodes()
 
 

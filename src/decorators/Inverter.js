@@ -9,11 +9,11 @@ class Inverter extends Decorator {
         })
     }
 
-    run(blackboard, tick) {
+    async run(blackboard, tick) {
 
         if (!this.child) throw new Error("No child defined for Inverter")
 
-        let status = this.child._execute(blackboard, tick)
+        let status = await this.child._execute(blackboard, tick)
 
         switch(status) {
             case SUCCESS: return FAILURE

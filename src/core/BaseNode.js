@@ -9,31 +9,31 @@ export default class BaseNode {
         this.properties = properties || {}
     }
 
-    _execute(blackboard, tick) {
-        if(!tick.isOpen(this)) this._start(blackboard, tick)
-        let status = this._run(blackboard, tick)
-        if(status !== RUNNING) this._end(blackboard, tick)
+    async _execute(blackboard, tick) {
+        if(!tick.isOpen(this)) await this._start(blackboard, tick)
+        let status = await this._run(blackboard, tick)
+        if(status !== RUNNING) await this._end(blackboard, tick)
         return status
     }
 
-    _start(blackboard, tick) {
+    async _start(blackboard, tick) {
         tick.open(this)
-        this.start(blackboard, tick)
+        await this.start(blackboard, tick)
     }
 
-    _run(blackboard, tick) {
-        return this.run(blackboard, tick)
+    async _run(blackboard, tick) {
+        return await this.run(blackboard, tick)
     }
 
-    _end(blackboard, tick) {
+    async _end(blackboard, tick) {
         tick.close(this)
-        this.end(blackboard, tick)
+        await this.end(blackboard, tick)
     }
 
-    start(blackboard, tick) {}
+    async start(blackboard, tick) {}
 
-    run(blackboard, tick) {}
+    async run(blackboard, tick) {}
 
-    end(blackboard, tick) {}
+    async end(blackboard, tick) {}
 
 }
